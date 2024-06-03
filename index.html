@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block's Chaos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="titleScreen">
+            <h1>Block's Chaos</h1>
+            <p>Collect the green cubes while avoiding the obstacles!</p>
+          <p>© Marx 2024</p>
+            <button onclick="startGame()">Start</button>
+        </div>
+        <div id="deathScreen" style="display: none;">
+            <h1>Game Over</h1>
+            <p>Score: <span id="finalScore"></span></p>
+            <button onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
